@@ -1,48 +1,83 @@
-# 🖼️ Formato de Imagem Comprimida **.oxz** 
-Sistema proprietário de compressão e reconstrução de imagens.
+# 🧬 Casca Fantasma — Execução Observável, Lógica Não-Observável  
+## Formato Experimental de Imagem **.oxz** (Demonstração Pública N9.5)
 
-Este repositório contém:
+Este repositório apresenta a **primeira demonstração pública da tecnologia Casca Fantasma**, aplicada ao formato de imagem comprimida **.oxz**.
 
-✔ **Um arquivo `.oxz` gerado pelo compressor proprietário**  
-✔ **O descompressor oficial (`descompressor_n95.py`)**  
-✔ **Documentação de uso para reconstrução da imagem**
+Aqui você encontrará:
 
-> ⚠ O compressor **não é público** — apenas o descompressor é disponibilizado.  
-> O objetivo é demonstrar a tecnologia sem expor a lógica de geração.
+✔ **Um arquivo `.oxz` gerado por um compressor protegido pela Casca Fantasma**  
+✔ **O descompressor oficial N9.5 (`descompressor_n95.py`)**  
+✔ **Documentação mínima para reconstrução da imagem sem revelar a lógica interna**
 
----
+> ⚠ **Importante:**  
+> O compressor **não é público**. Ele pertence ao ecossistema da Casca Fantasma e sua lógica não pode ser deduzida, reconstruída ou replicada a partir do descompressor.
 
-## 📌 Sobre o formato **N9.5 (.oxz)**
-
-O formato `.oxz` é um sistema customizado de compressão, projetado para:
-
-- Reorganizar e randomizar blocos internos  
-- Aplicar **seed antiforense**  
-- Usar assinatura parcial SHA-256  
-- Comprimir blocos com **bz2**  
-- Manipular paletas adaptativas, RGBA e buffers binários  
-- Utilizar estrutura de cabeçalho própria
-
-O descompressor reconstrói a imagem original a partir dessa arquitetura.
+O `.oxz` atua apenas como *ambiente de demonstração* para observar a Casca em ação.
 
 ---
 
-## 📂 Conteúdo deste repositório
+# 🧠 O que é a Casca Fantasma?
 
-- `arquivo.oxz` — arquivo de imagem comprimida  
-- `descompressor_n95.py` — script oficial de descompressão  
-- Documentação de uso
+A **Casca Fantasma** é uma camada antiforense de execução que transforma algoritmos comuns em **fenômenos não reconstruíveis**.
+
+Ela não tenta esconder código.  
+Ela destrói significado.
+
+Ela não bloqueia depuração.  
+Ela sabota o que o depurador tenta revelar.
+
+Com a Casca, a computação segue um novo paradigma:
+
+✔ A execução ocorre  
+✔ O resultado é verificável  
+✔ A lógica interna permanece invisível  
+✔ O binário não revela intenção  
+✔ A engenharia reversa encontra apenas um labirinto simbólico
+
+A Casca Fantasma rompe o axioma clássico:
+
+> “Se executa, pode ser entendido.”  
+**Aqui, não pode.**
 
 ---
 
-## 🚀 Como usar
+# 📦 O formato **.oxz** como prova operacional
 
-1. **Instale as dependências**
+O arquivo `.oxz` deste repositório foi comprimido através de mecanismos internos protegidos pela Casca, incluindo:
+
+- 🔁 **Fragmentação simbólica dinâmica**  
+- 🧬 **Seeds antiforenses por execução**  
+- 🛡️ **Assinatura parcial SHA-256**  
+- 📦 **Compressão de blocos com bz2**  
+- 🎨 **Paletas adaptativas e buffers RGBA**  
+- 🧩 **Cabeçalho proprietário com estrutura variável**
+
+O descompressor reconstrói a imagem original, mas:
+
+❌ não permite inferir o compressor  
+❌ não revela a arquitetura simbólica  
+❌ não expõe o processo interno de geração
+
+Ele é apenas **uma vista controlada da superfície do sistema**.
+
+---
+
+# 📂 Conteúdo deste repositório
+
+- **`arquivo.oxz`** — arquivo comprimido protegido pela Casca  
+- **`descompressor_n95.py`** — descompressor oficial N9.5  
+- **`README.md`** — documentação da demonstração
+
+---
+
+# 🚀 Como usar o Descompressor N9.5
+
+### 1. Instale as dependências
 ```bash
 pip install pillow numpy
 
 2. **Execute a descompressão**
 ```bash
-python descompressor_n95.py arquivo.oxz imagem_final.png
+python descompressor_n95.py arquivo_saida.oxz imagem_final.png
 
 
