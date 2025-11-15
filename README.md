@@ -12,7 +12,7 @@ Aqui você encontrará:
 > ⚠ **Importante:**  
 > O compressor **não é público**. Ele pertence ao ecossistema da Casca Fantasma e sua lógica não pode ser deduzida, reconstruída ou replicada a partir do descompressor.
 
-O `.oxz` atua apenas como *ambiente de demonstração* para observar a Casca em ação.
+O `.oxz` atua é o *ambiente ideal* para se observar a Casca em ação, devido ao fato de ser um codigo privado.
 
 ---
 
